@@ -1,0 +1,5 @@
++define+__SIMULATION__
+../design/msg_parser.sv
+top.sv
+
+// ../design/msg_parser_v2.sv
