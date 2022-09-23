@@ -1,0 +1,14 @@
+set_global_assignment -name FAMILY STRATIX10
+set_global_assignment -name DEVICE 1SG10MHN3F74C2LG_U1
+set_global_assignment -name TOP_LEVEL_ENTITY top
+
+# hdl files
+set_global_assignment -name SYSTEMVERILOG_FILE  ../tb/top.sv
+set_global_assignment -name SYSTEMVERILOG_FILE  ../design/msg_parser.sv
+
+#pin assignment
+#set_location_assignment -name PIN_ -to clock
+#set_location_assignment -name PIN_ -to reset
+
+# sdc file
+set_global_assignment -name SDC_FILE            ../sdc/msg_parser.sdc
