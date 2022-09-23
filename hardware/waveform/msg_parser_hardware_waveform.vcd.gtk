@@ -1,0 +1,25 @@
+# MB1_FA1_F1 CLK_STN
+gtkwave::/Edit/Insert_Comment "MB1_FA1_F1 CLK_STN"
+set l1 [list]
+gtkwave::addSignalsFromList [list {top.clk}]
+lappend l1 {top.clk}
+lappend l1 {top.compare_ok}
+lappend l1 {top.counter1}
+lappend l1 {top.counter2}
+lappend l1 {top.expected_data}
+lappend l1 {top.global_compare_ok}
+lappend l1 {top.msg_data_r}
+lappend l1 {top.msg_length}
+lappend l1 {top.msg_valid}
+lappend l1 {top.rst}
+lappend l1 {top.tdata}
+lappend l1 {top.terror}
+lappend l1 {top.tkeep}
+lappend l1 {top.tlast}
+lappend l1 {top.tready}
+lappend l1 {top.tvalid}
+lappend l1 {top.trigger.stn0_trigger}
+gtkwave::addSignalsFromList $l1
+
+gtkwave::/Edit/Toggle_Trace_Hier
+gtkwave::/Time/Zoom/Zoom_Full
